@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Add your listing
+  form(method='POST' action='/spaces')
+    label(for='name') Name:
+      input#name(type='text', placeholder='Name', name='name')
+      button(type='submit') List the space
